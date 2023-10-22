@@ -1,5 +1,4 @@
-from . import IBattery
-from datetime import timedelta
+from .battery_interface import IBattery
 
 
 class NubbinBattery(IBattery):

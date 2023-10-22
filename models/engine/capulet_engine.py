@@ -1,4 +1,4 @@
-from . import IEngine
+from .engine_interface import IEngine
 
 
 class CapuletEngine(IEngine):
