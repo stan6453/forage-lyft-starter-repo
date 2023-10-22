@@ -6,13 +6,13 @@ class TestCapuletEngine(TestCase):
     def test_engine(self):
         test_case = [
             (
-                60_000,
+                60_001,
                 30_000,
                 True,
                 "Engine needs servicing"
             ),
             (
-                89_000,
+                90_000,
                 60_000,
                 False,
                 "Engine does not need servicing"

@@ -6,13 +6,13 @@ class TestWilloughbyEngine(TestCase):
     def test_engine(self):
         test_case = [
             (
-                120_000,
+                120_001,
                 60_000,
                 True,
                 "Engine needs servicing"
             ),
             (
-                179_999,
+                180_000,
                 120_000,
                 False,
                 "Engine does not need servicing"

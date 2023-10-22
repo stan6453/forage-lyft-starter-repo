@@ -8,4 +8,4 @@ class CapuletEngine(IEngine):
 
     def needs_service(self):
         service_mileage_threshold = 30000
-        return self.__current_mileage - self.__last_service_mileage >= service_mileage_threshold
+        return self.__current_mileage - self.__last_service_mileage > service_mileage_threshold

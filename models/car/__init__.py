@@ -8,3 +8,6 @@ class IServiceable(ABC):
     def needs_service():
         """returns true if object needs servicing"""
         pass
+
+if True:
+    from .car_factory import CarFactory 
