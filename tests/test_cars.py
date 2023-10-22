@@ -26,8 +26,7 @@ class TestCalliope(unittest.TestCase):
         self.assertFalse(car.needs_service())
 
     def test_engine_should_be_serviced(self):
-        last_service_date = datetime.today().date()
-        today = datetime.today().date()
+        last_service_date = today = datetime.today().date()
         current_mileage = 30001
         last_service_mileage = 0
         tires_wear = [0.1,0.2,0.3,0.4]
@@ -36,8 +35,7 @@ class TestCalliope(unittest.TestCase):
         self.assertTrue(car.needs_service())
 
     def test_engine_should_not_be_serviced(self):
-        today = datetime.today().date()
-        last_service_date = datetime.today().date()
+        last_service_date = today = datetime.today().date()
         current_mileage = 30000
         last_service_mileage = 0
         tires_wear = [0.1,0.2,0.3,0.4]
@@ -46,8 +44,7 @@ class TestCalliope(unittest.TestCase):
         self.assertFalse(car.needs_service())
 
     def test_tire_should_be_serviced(self):
-        today = datetime.today().date()
-        last_service_date = datetime.today().date()
+        last_service_date = today = datetime.today().date()
         current_mileage = 30000
         last_service_mileage = 0
         tires_wear = [0.1,0.2,0.3,0.9]
@@ -56,8 +53,7 @@ class TestCalliope(unittest.TestCase):
         self.assertTrue(car.needs_service())
 
     def test_tire_should_not_be_serviced(self):
-        today = datetime.today().date()
-        last_service_date = datetime.today().date()
+        last_service_date = today = datetime.today().date()
         current_mileage = 30000
         last_service_mileage = 0
         tires_wear = [0.1,0.2,0.3,0.4]
@@ -87,8 +83,7 @@ class TestGlissade(unittest.TestCase):
         self.assertFalse(car.needs_service())
 
     def test_engine_should_be_serviced(self):
-        today = datetime.today().date()
-        last_service_date = datetime.today().date()
+        last_service_date = today =datetime.today().date()
         current_mileage = 60001
         last_service_mileage = 0
         tires_wear = [0.1,0.2,0.3,0.4]
@@ -97,8 +92,7 @@ class TestGlissade(unittest.TestCase):
         self.assertTrue(car.needs_service())
 
     def test_engine_should_not_be_serviced(self):
-        last_service_date = datetime.today().date()
-        today = datetime.today().date()
+        last_service_date = today = datetime.today().date()
         current_mileage = 60000
         last_service_mileage = 0
         tires_wear = [0.1,0.2,0.3,0.4]
@@ -127,8 +121,7 @@ class TestPalindrome(unittest.TestCase):
         self.assertFalse(car.needs_service())
 
     def test_engine_should_be_serviced(self):
-        last_service_date = datetime.today().date()
-        today = datetime.today().date()
+        last_service_date = today = datetime.today().date()
         warning_light_is_on = True
         tires_wear = [0.1,0.2,0.3,0.4]
 
@@ -167,8 +160,7 @@ class TestRorschach(unittest.TestCase):
         self.assertFalse(car.needs_service())
 
     def test_engine_should_be_serviced(self):
-        last_service_date = datetime.today().date()
-        today = datetime.today().date()
+        last_service_date = today = datetime.today().date()
         current_mileage = 60001
         last_service_mileage = 0
         tires_wear = [0.1,0.2,0.3,0.4]
@@ -177,8 +169,7 @@ class TestRorschach(unittest.TestCase):
         self.assertTrue(car.needs_service())
 
     def test_engine_should_not_be_serviced(self):
-        last_service_date = datetime.today().date()
-        today = datetime.today().date()
+        last_service_date = today= datetime.today().date()
         current_mileage = 60000
         last_service_mileage = 0
         tires_wear = [0.1,0.2,0.3,0.4]
@@ -187,9 +178,8 @@ class TestRorschach(unittest.TestCase):
         self.assertFalse(car.needs_service())
 
     def test_tire_should_be_serviced(self):
-        last_service_date = datetime.today().date()
-        today = datetime.today().date()
-        current_mileage = 60000
+        last_service_date = today = datetime.today().date()
+        current_mileage = 6
         last_service_mileage = 0
         tires_wear = [1, 1, 0.3, 0.9]
 
@@ -197,9 +187,8 @@ class TestRorschach(unittest.TestCase):
         self.assertTrue(car.needs_service())
 
     def test_tire_should_not_be_serviced(self):
-        last_service_date = datetime.today().date()
-        today = datetime.today().date()
-        current_mileage = 60000
+        last_service_date = today = datetime.today().date()
+        current_mileage = 6
         last_service_mileage = 0
         tires_wear = [0.1, 0.2, 0.3, 0.4]
 
@@ -229,8 +218,7 @@ class TestThovex(unittest.TestCase):
         self.assertFalse(car.needs_service())
 
     def test_engine_should_be_serviced(self):
-        last_service_date = datetime.today().date()
-        today = datetime.today().date()
+        last_service_date = today = datetime.today().date()
         current_mileage = 30001
         last_service_mileage = 0
         tires_wear = [0.1, 0.2, 0.3, 0.4]
@@ -239,8 +227,7 @@ class TestThovex(unittest.TestCase):
         self.assertTrue(car.needs_service())
 
     def test_engine_should_not_be_serviced(self):
-        last_service_date = datetime.today().date()
-        today = datetime.today().date()
+        last_service_date = today = datetime.today().date()
         current_mileage = 30000
         last_service_mileage = 0
         tires_wear = [0.1, 0.2, 0.3, 0.4]
