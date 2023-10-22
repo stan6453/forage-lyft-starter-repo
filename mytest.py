@@ -19,3 +19,12 @@ last_service_mileage = 30000
 car = CarFactory.create_calliope(current_date, last_service_date, current_mileage, last_service_mileage)
 
 print(car.needs_service())
+
+
+current_date = datetime.now()
+last_service_date = datetime(2021, 11, 18)
+warning_light_on = True
+
+car = CarFactory.create_palindrome(current_date, last_service_date, warning_light_on)
+
+print(car.needs_service())

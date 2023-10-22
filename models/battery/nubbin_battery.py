@@ -8,5 +8,7 @@ class NubbinBattery(IBattery):
         self.__current_date = current_date
 
     def needs_service(self):
-        service_interval_in_days = 365 * 4
-        return (self.__current_date - self.__last_service_date) >= timedelta(service_interval_in_days)
+        next_service_date = self.__last_service_date.replace(
+            self.__last_service_date.year+4
+        )
+        return self.__current_date >= next_service_date
